@@ -14,3 +14,8 @@ outputs/
 .idea/
 .DS_Store
 Thumbs.db
+
+# mnemon documents (project lessons) ARE tracked so the team shares them;
+# the runtime hot memory is machine-local and rewritten every session, and
+# USER.md is a personal profile — never commit either.
+.mnemon/runtime/

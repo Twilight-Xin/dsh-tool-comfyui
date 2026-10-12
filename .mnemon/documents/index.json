@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "092d069c-6ecc-4fdc-988c-1179d52ea0be",
+      "title": "dsh-tool-comfyui settings card (plugins.row.config) implementation handoff",
+      "description": "How the ComfyUI tool's visual configuration card was built against DSH 0.2.0-rc.2: Host volatile fields, lazy-CJS client bundle, owner-props form contract, and verification results.",
+      "status": "active",
+      "filename": "dsh-tool-comfyui-settings-card-plugins-row-confi-092d069c.md",
+      "relativePath": "documents/active/dsh-tool-comfyui-settings-card-plugins-row-confi-092d069c.md",
+      "sourcePaths": [
+        "lib/client.js",
+        "lib/index.js",
+        "package.json",
+        "README.md"
+      ],
+      "sessionIds": [
+        "8a322348-1395-4881-b01d-910c4df771c6"
+      ],
+      "createdAt": "2026-10-12T02:24:23.404Z",
+      "updatedAt": "2026-10-12T02:24:23.404Z",
+      "lastAccessedAt": "2026-10-12T04:11:54.955Z",
+      "revision": 1,
+      "contentHash": "1d51331ebd2de117a1c79a0e08acaa6bff4ebfc0e81a61e6a20debe618dc2f73",
+      "sizeBytes": 4422,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "10649f83-8e33-4f42-aa00-45396c3b9262",
+      "title": "dsh volatile 字段致 Host apply() 崩溃的诊断与修复教训",
+      "description": "2026-10 排障记录：.volatile() 字段以 Volatile<T> 引用传入 apply() 导致 fiber 启动失败、设置页显示\"不可用\"的完整因果链、诊断方法与修复模式（含热生效开关）。",
+      "status": "active",
+      "filename": "dsh-volatile-host-apply-10649f83.md",
+      "relativePath": "documents/active/dsh-volatile-host-apply-10649f83.md",
+      "sourcePaths": [
+        "lib/index.js",
+        "lib/client.js",
+        "cordis.patch.yml",
+        "package.json",
+        "README.md"
+      ],
+      "sessionIds": [
+        "session-962a8297-a320-45da-9c7b-f5f7fd91f8d1"
+      ],
+      "createdAt": "2026-10-12T04:13:01.980Z",
+      "updatedAt": "2026-10-12T04:13:01.980Z",
+      "lastAccessedAt": "2026-10-12T04:13:01.980Z",
+      "revision": 1,
+      "contentHash": "01c3792d5d0d4d93de40350b17c6ea60d0c3c2ed15ed1a62698c95a808b239d1",
+      "sizeBytes": 5160,
+      "memoryBodyIds": []
+    }
+  ]
+}
