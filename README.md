@@ -143,6 +143,8 @@ mklink /J "%USERPROFILE%\.dsh\profiles\desktop\node_modules\dsh-tool-comfyui" ^
 
 ## 配置机队
 
+你也可以直接在 **dsh 设置界面** 里可视化编辑本插件配置（`workers`、`workflowsDir`、`outputDir` 等）。
+
 在 profile 的 `cordis.patch.yml` 覆盖插件行：
 
 ```yaml
