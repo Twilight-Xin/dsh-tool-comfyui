@@ -143,7 +143,25 @@ mklink /J "%USERPROFILE%\.dsh\profiles\desktop\node_modules\dsh-tool-comfyui" ^
 
 ## 配置机队
 
-你也可以直接在 **dsh 设置界面** 里可视化编辑本插件配置（`workers`、`workflowsDir`、`outputDir` 等）。
+### 可视化编辑（推荐）
+
+装好并重启 profile 后，有两个可视化入口，内容相同、改完点 **保存** 即写回 profile 的
+`cordis.patch.yml`，无需手改 YAML：
+
+1. **设置（Settings）→ ComfyUI** —— 侧边栏打开设置弹窗，导航栏里的独立一栏；
+2. **插件（Plugins）→ dsh-tool-comfyui → `tool-comfyui` 行 → 配置** —— 插件页行内卡片。
+
+可编辑 `workers`、`workflowsDir`、`defaultWorkflow`、`outputDir`、`timeoutMs`、
+`pollIntervalMs`、`maxBatchSize` 以及三个工具开关；**保存即生效，无需重启**——
+开关切换会即时注册/注销对应工具，其余参数在下一次调用时读到新值。
+
+> 可视化界面由两半组成：Host 半（`lib/index.js` 的 `Config` 字段声明了 `.volatile()`，
+> dsh 设置服务据此自动投影表单；`apply()` 按 dsh 约定把 Loader 传来的 `Volatile<T>`
+> 实时引用逐字段解包后使用）与浏览器半（`lib/client.js`，向 `settings.section`
+> （设置导航）与 `plugins.row.config`（插件页行卡片）两处注册同一张表单）。
+> 二者缺一，界面上就不会出现可配置项。
+
+### 手写配置（等价）
 
 在 profile 的 `cordis.patch.yml` 覆盖插件行：
 
